@@ -28,7 +28,9 @@
     <div id="log"></div>
 </body>
 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_3VeFSPqQcB8jmnn5Ju8MO3EZPGg8Y_g&callback=initMap"></script>
+    
     <script type="text/javascript" src="markerwithlabel.js"></script>
     <script type="text/javascript">
         function initMap() {
@@ -66,13 +68,15 @@
                     opacity: 1.0
                 }
             });
-
+            // CREAR LOS INFOWINDOWS
             var iw1 = new google.maps.InfoWindow({
                 content: "Home For Sale"
             });
             var iw2 = new google.maps.InfoWindow({
                 content: "Another Home For Sale"
             });
+
+            // EVENTO CLICK PARA ABRIR WINDOWS
             google.maps.event.addListener(marker1, "click", function (e) {
                 iw1.open(map, this);
             });

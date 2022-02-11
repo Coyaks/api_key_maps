@@ -1,11 +1,15 @@
 .labels {
-	color: red;
-	background-color: white;
+	color: white;
+	background-color: rgb(68, 68, 68);
 	font-family: "Lucida Grande", "Arial", sans-serif;
 	font-size: 10px;
 	font-weight: bold;
 	text-align: center;
 	width: 60px;     
-	border: 2px solid black;
+	/* border: 1px solid black; */
 	white-space: nowrap;
+	border-radius: 10px;
+	padding: 4px;
+	box-shadow: 5px 5px 10px #ccc;
+	
 }
